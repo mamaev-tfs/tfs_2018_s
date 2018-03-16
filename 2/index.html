@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<title>Заголовок</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<img src="assets/header-logo.svg" alt="Логотип Тинькофф">
+					<a 	class="header__phone"
+						href="tel:88005551122">
+						8 800 555-11-22
+					</a>
+				</div>
+			</div>
+		</header>
+		<nav class="menu">
+			<div class="container">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a 	class="menu__link menu__link_active"
+							href="#">карты</a>
+					</li>
+					<li class="menu__item">
+						<a 	class="menu__link"
+							href="#">вклады</a>
+					</li>
+					<li class="menu__item">
+						<a 	class="menu__link"
+							href="#">платежи и переводы</a>
+					</li>
+					<li class="menu__item">
+						<a 	class="menu__link"
+							href="#">бонусы</a>
+					</li>
+					<li class="menu__item">
+						<a 	class="menu__link"
+							href="#">страхование</a>
+					</li>
+					<li class="menu__item">
+						<a 	class="menu__link"
+							href="#">о банке</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section class="promo">
+				<div class="container">
+					<div class="promo__wrapper">
+						<h1 class="promo__title">Карты для вас прямо сейчас</h1>
+						<p class="promo__text">Выбирайте карту, пользуйтесь удобными сервисами</p>
+						<p class="promo__button-row">
+							<a class="button" href="#form">Оформить заявку</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<h2 class="title">Любые категории платежей</h2>
+					<div class="custom-textarea" contenteditable="true">Любые покупки</div>
+				</div>
+			</section>
+			<section class="section"
+					 id="form">
+				<div class="container">
+					<h2 class="title">Заполните несколько простых&nbsp;полей</h2>
+					<form class="form" method="post" action="index.html" autocomplete="off">
+						<div class="form__row">
+							<div class="field">
+								<input 	id="fullname"
+										  class="field__input"
+										  autofocus
+										  name="fullname"
+										  placeholder="Иванов Иван Иванович"
+										  type="text"
+										  required/>
+								<label class="field__label"
+									   for="fullname">ФИО</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="field">
+								<input 	id="password"
+									  	class="field__input"
+										maxlength="10"
+										name="password"
+										type="password"
+										required/>
+								<label class="field__label"
+									   for="password">Пароль</label>
+							</div>
+						</div>
+						<div class="form__row">
+							 <div class="field">
+								<input 	id="phone"
+									  	class="field__input"
+										name="phone"
+									  	pattern="\+7[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+										placeholder="+7(___)___-__-__"
+										type="tel"
+										required/>
+								<label class="field__label"
+									   for="phone">Телефон</label>
+							</div>
+						</div>
+						<h3 class="form__title">Выберите это или другое</h3>
+						<div class="form__row">
+							<label class="radio-block">
+								<input 	class="radio-block__native"
+									  	type="radio"
+										name="choice"
+										value="variant1"
+										required>
+								<span class="radio-block__pseudo-native"></span>
+								<span class="radio-block__label">Это</span>
+							</label>
+							<label class="radio-block">
+								<input 	class="radio-block__native"
+									  	type="radio"
+										name="choice"
+										value="variant2"
+										required>
+								<span class="radio-block__pseudo-native"></span>
+								<span class="radio-block__label">Другое</span>
+							</label>
+						</div>
+						<div class="form__row form__row_button">
+							<button class="button button_form"
+									type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				Тинькофф
+			</div>
+		</footer>
+	</body>
+</html>

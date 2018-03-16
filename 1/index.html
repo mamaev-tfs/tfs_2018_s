@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<title>Заголовок</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div>
+				<img src="assets/header-logo.svg" alt="Логотип Тинькофф">
+				<a href="tel:88005551122"></a>
+			</div>
+		</header>
+		<nav>
+			<div>
+				<ul>
+					<li>
+						<a href="#">карты</a>
+					</li>
+					<li>
+						<a href="#">вклады</a>
+					</li>
+					<li>
+						<a href="#">платежи и переводы</a>
+					</li>
+					<li>
+						<a href="#">бонусы</a>
+					</li>
+					<li>
+						<a href="#">страхование</a>
+					</li>
+					<li>
+						<a href="#">о банке</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section>
+				<div>
+					<div>
+						<h1>Карты для вас прямо сейчас</h1>
+						<p>Выбирайте карту, пользуйтесьудобными сервисами</p>
+						<a href="#form">Оформить заявку</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h2>Любые категории платежей</h2>
+					<div>Любые покупки</div>
+				</div>
+			</section>
+			<section id="form">
+				<div>
+					<h2>Заполните несколько простых полей </h2>
+					<form method="post" action="index.html" autocomplete="off">
+						<div>
+							<div>
+	                            <input 	autofocus
+                            			name="fullname"
+            							placeholder="Иванов Иван Иванович" 
+                            			type="text" 
+                            			required>
+	                            <label>ФИО</label>
+	                        </div>
+	                        <div>
+	                            <input 	maxlength="10"
+	                            		name="password"
+                            			type="password" 
+                            			required>
+	                            <label>Пароль</label>
+	                        </div>
+	                         <div>
+	                            <input 	name="phone"
+	                            		placeholder="+7(___)___-__-__" 
+	                            		readonly
+                            			type="tel" 
+                            			required/>
+	                            <label>Телефон</label>
+	                        </div>
+	                        <h3>Выберите это или другое</h3>
+							<div>
+								<label>
+	                                <input 	type="radio" 
+	                                		name="choice" 
+                                			value="variant1"
+                                			required>
+                                		Это
+	                            </label>
+	                            <label>
+	                                <input 	type="radio" 
+	                                		name="choice" 
+                                			value="variant2"
+                                			required>
+                                		Другое
+	                            </label>
+							</div>
+	                        <div>
+				                <button type="submit">Отправить</button> 
+				            </div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>
